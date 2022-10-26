@@ -1,0 +1,514 @@
+:root {
+  transition: 0.5s;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+}
+
+.main-preloader {
+  position: fixed;
+  z-index: 9999;
+  background: linear-gradient(#fc2561,#d823e7);
+  width: 100%;
+  height: 100%;
+}
+
+.preloader-logo {
+  position: absolute;
+  left: 411px;
+  transform: scale(0.4);
+  top: 50px;
+  animation: anim 2.5s ease-in-out;
+  }
+
+@keyframes anim {
+  0% {
+    transform: scale(0.4);
+  }
+
+  50% {
+    transform: scale(0.6);
+  }
+
+  100% {
+    transform: scale(0.4);
+  }
+}
+
+.hero-text {
+  position: absolute;
+  left: 445px;
+  top: 150px;
+  text-align: center;
+  font-family: SF Pro Display;
+  font-size: 100px;
+  background: linear-gradient(#fc2561,#d823e7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.tagline-text {
+  position: absolute;
+  font-family: SF Pro Display;
+  font-weight: 100;
+  font-size: 20px;
+  color: #1E1E1E;
+  opacity: 0.6;
+  left: 538px;
+  top: 488px;
+}
+
+#green-shape {
+  position: absolute;
+  transform: scale(0.5);
+  left: 857px;
+  top: 214px;
+}
+
+#orange-shape {
+  position: absolute;
+  transform: scale(0.5);
+  left: -71px;
+  top: -82px;
+}
+
+#blue-shape {
+  position: absolute;
+  transform: scale(0.5);
+  left: -15px;
+  top: 261px;
+}
+
+#purple-shape {
+  position: absolute;
+  transform: scale(0.5);
+  left: 55px;
+  top: -83px;
+}
+
+#pink-shape {
+  position: absolute;
+  transform: scale(0.5);
+  right: 70px;
+  top: -71px;
+}
+
+.box {
+  position: absolute;
+  background: #f6f0f0;
+  opacity: 0.5;
+  width: 500px;
+  height: 44px;
+  top: 26px;
+  right: 400px;
+}
+
+.blur {
+  position: absolute;
+  width: 500px;
+  height: 44px;
+  border-radius: 3px;
+  top: 26px;
+  right: 400px;
+  background: rgba(255,255,255,0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.2);
+  z-index: -1;
+}
+
+.navbar a {
+  margin: 0px;
+  padding-top: 20px;
+  transform: translateY(10px);
+}
+
+.text {
+  transform: translateY(10px);
+}
+
+.Home,
+.Services,
+.Resources,
+.Article,
+.Apps {
+  font-family: SF Pro Display;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  padding: 15px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------*/
+/* --------------------------------------------------- Responsive----------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------------*/
+
+/*
+@media (max-width:  425px) {
+  .hero-text {
+    font-size: 200px;
+    left: 231px;
+    top: 600px;
+  }
+
+  .tagline-text {
+    font-size: 50px;
+    width: 500px;
+    left: 369px;
+    top: 1589px;
+  }
+
+  #green-shape {
+    transform: scale(1.5);
+    top: 1329px;
+    left: 823px;
+  }
+
+  #orange-shape {
+    transform: scale(1.5);
+    top: 217px;
+  }
+
+  #blue-shape {
+    transform: scale(1.5);
+    top: 1386px;
+  }
+
+  #purple-shape {
+    transform: scale(1.5);
+    top: 142px;
+    left: 185px;
+  }
+
+  #pink-shape {
+    transform: scale(1.5);
+    top: 81px;
+    left: 868px;
+  }
+
+  .box {
+    transform: scale(2.0);
+    right: -502px;
+    top: 112px;
+  }
+}
+
+
+
+@media (min-width:  768px) {
+  .hero-text {
+    font-size: 200px;
+    left: 256px;
+    top: 111px;
+  }
+
+  #pink-shape {
+    transform: scale(0.6);
+    right: -421px;
+    top: -71px;
+  }
+}
+
+@media (min-width:  1200px) {
+  body {
+    background: purple;
+  }
+
+  .hero-text {
+    position: absolute;
+    left: 544px;
+    top: 150px;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 100px;
+    color: #FF068D;
+  }
+
+  .tagline-text {
+    position: absolute;
+    font-family: SF Pro Display;
+    font-size: 20px;
+    color: #1E1E1E;
+    opacity: 0.6;
+    left: 649px;
+    top: 488px;
+  }
+
+  #green-shape {
+    position: absolute;
+    transform: scale(0.6);
+    left: 1109px;
+    top: 214px;
+  }
+
+  #orange-shape {
+    position: absolute;
+    transform: scale(0.6);
+    left: -71px;
+    top: -82px;
+  }
+
+  #blue-shape {
+    position: absolute;
+    transform: scale(0.6);
+    left: -15px;
+    top: 261px;
+  }
+
+  #purple-shape {
+    position: absolute;
+    transform: scale(0.6);
+    left: 55px;
+    top: -83px;
+  }
+
+  #pink-shape {
+    position: absolute;
+    transform: scale(0.6);
+    left: 1054px;
+    top: -71px;
+  }
+
+/*  .background {
+    position: absolute;
+    left: 6px;
+    transform: scale(1.3);
+  }*/
+
+/*
+
+  .box {
+    position: absolute;
+    background: #f6f0f0;
+    opacity: 0.5;
+    width: 500px;
+    height: 44px;
+    border-radius: 3px;
+    top: 26px;
+    right: 400px;
+  }
+
+  .blur {
+    position: absolute;
+    width: 500px;
+    height: 44px;
+    border-radius: 3px;
+    top: 26px;
+    right: 400px;
+    background: rgba(255,255,255,0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.2);
+    z-index: -1;
+  }
+
+  .navbar {
+    position: absolute;
+    right: 93px;
+  }
+
+  .navbar a {
+    margin: 0px;
+    padding-top: 20px;
+    transform: translateY(10px);
+  }
+
+  .text {
+    transform: translateY(10px);
+  }
+
+  .Home,
+  .Services,
+  .Resources,
+  .Article,
+  .Apps {
+    font-family: SF Pro Display;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    padding: 15px;
+  }
+}
+
+@media (min-width:  992px) {
+  body {
+    background: grey;
+  }
+
+  .hero-text {
+    position: absolute;
+    left: 445px;
+    top: 150px;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 100px;
+    color: #FF068D;
+  }
+
+  .tagline-text {
+    position: absolute;
+    font-family: SF Pro Display;
+    font-size: 20px;
+    color: #1E1E1E;
+    opacity: 0.6;
+    left: 548px;
+    top: 488px;
+  }
+
+  #green-shape {
+    position: absolute;
+    transform: scale(0.6);
+    left: 857px;
+    top: 214px;
+  }
+
+  #orange-shape {
+    position: absolute;
+    transform: scale(0.6);
+    left: -71px;
+    top: -82px;
+  }
+
+  #blue-shape {
+    position: absolute;
+    transform: scale(0.6);
+    left: -15px;
+    top: 261px;
+  }
+
+  #purple-shape {
+    position: absolute;
+    transform: scale(0.6);
+    left: 55px;
+    top: -83px;
+  }
+
+  #pink-shape {
+    position: absolute;
+    transform: scale(0.6);
+    right: -266px;
+    top: -71px;
+  }
+
+  .box {
+    position: absolute;
+    background: #f6f0f0;
+    opacity: 0.5;
+    width: 500px;
+    height: 44px;
+    border-radius: 3px;
+    top: 26px;
+    right: 400px;
+  }
+
+  .blur {
+    position: absolute;
+    width: 500px;
+    height: 44px;
+    border-radius: 3px;
+    top: 26px;
+    right: 400px;
+    background: rgba(255,255,255,0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.2);
+    z-index: -1;
+  }
+
+  .navbar {
+    position: absolute;
+    right: 0px;
+  }
+
+  .navbar a {
+    margin: 0px;
+    padding-top: 20px;
+    transform: translateY(10px);
+  }
+
+  .text {
+    transform: translateY(10px);
+  }
+
+  .Home,
+  .Services,
+  .Resources,
+  .Article,
+  .Apps {
+    font-family: SF Pro Display;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    padding: 15px;
+  }
+}
+
+@media (min-width:  700px) {
+  body {
+    background: black;
+  }
+}
+*/
+
+/*
+@media (prefers-color-scheme: dark){
+  body {
+    background: #000;
+  }
+
+  .box, .blur {
+    background: #000;
+    border:  white;
+  }
+
+  .text a {
+    color: #fff;
+  }
+
+  .tagline-text {
+    color: #fff;
+  }
+}
+*/
+
+.dark-mode {
+  transition: 0.5s;
+}
+
+.dark-mode body {
+  background: #323232;
+}
+
+.dark-mode .tagline-text {
+  color: #fff;
+  font-weight: 100;
+  opacity: 1;
+}
+
+.dark-mode .box {
+  background: #323232;
+  border: #323232;
+}
+
+.dark-mode .blur {
+  background: #323232;
+  border: #323232;
+}
+
+.dark-mode a {
+  color: #fff;
+}
+
+@media screen and (max-width: 768px){
+  .hero-text {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 250px 195px;
+  }
+}
