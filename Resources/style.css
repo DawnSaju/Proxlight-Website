@@ -4,6 +4,7 @@
 }
 
 * {
+  transition: 0.5s;
   box-sizing: border-box;
   margin: 0;
 }
@@ -68,7 +69,7 @@ body {
   opacity: 0.5;
   width: 500px;
   height: 44px;
-  border-radius: 3px;
+  border-radius: 10px;
   top: 26px;
   right: 400px;
 }
@@ -108,14 +109,14 @@ body {
 
 .frame {
   position: absolute;
-  width: 616px;
+  width: 590px;
   height: 408px;
-  right: 352px;
+  right: 358px;
   top: 100px;
   background: rgb(244 233 233 / 40%);
   backdrop-filter: blur(10px);
   border-radius: 10px;
-  border: 9px solid rgba(255,255,255,0.2);
+  border: 5px solid rgba(255,255,255,0.2);
 }
 
 .tagline {
@@ -139,6 +140,7 @@ body {
   width: 616px;
   height: 408px;
   top: -5px;
+  right: -20px;
   transform: scale(0.8);
 }
 
@@ -167,4 +169,40 @@ body {
   right: 20px;
   font-weight: bold;
   text-decoration: none;
+}
+
+.dark-mode {
+  transition: 0.5s;
+}
+
+.dark-mode body {
+  background: #323232;
+}
+
+.dark-mode .tagline-text {
+  color: #fff;
+  font-weight: 100;
+  opacity: 1;
+}
+
+.dark-mode .box {
+  background: #474747;
+}
+
+.dark-mode .blur{
+  background: #323232;
+  border: #323232;
+}
+
+.dark-mode .frame {
+  background: #323232;
+  border: 5px solid rgba(255,255,255,0.2);
+}
+
+.dark-mode .text h1 {
+  color: #fff;
+}
+
+.dark-mode a {
+  color: #fff;
 }

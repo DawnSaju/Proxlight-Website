@@ -4,6 +4,7 @@
 }
 
 * {
+  transition: 0.5s;
   box-sizing: border-box;
 }
 
@@ -67,7 +68,7 @@ body {
   opacity: 0.5;
   width: 500px;
   height: 44px;
-  border-radius: 3px;
+  border-radius: 10px;
   top: 26px;
   right: 400px;
 }
@@ -76,13 +77,12 @@ body {
   position: absolute;
   width: 500px;
   height: 44px;
-  border-radius: 3px;
   top: 26px;
   right: 400px;
   background: rgba(255,255,255,0.4);
   backdrop-filter: blur(10px);
-  border-radius: 10px;
   border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 10px;
   z-index: -1;
 }
 
@@ -161,520 +161,33 @@ body {
   height: 345px;
 }
 
-
-
-@media only screen and (min-width: 1022px) {
-
-  .box {
-    position: absolute;
-    background: #f6f0f0;
-    opacity: 0.5;
-    width: 500px;
-    height: 44px;
-    border-radius: 3px;
-    top: 26px;
-    right: 140px;
-  }
-
-  .blur {
-    position: absolute;
-    width: 500px;
-    height: 44px;
-    border-radius: 3px;
-    top: 26px;
-    right: 400px;
-    background: rgba(255,255,255,0.4);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    border: 1px solid rgba(255,255,255,0.2);
-    z-index: -1;
-  }
-
-  .Home, .Services, 
-  .Resources, .Article, 
-  .Apps {
-    font-family: SF Pro Display;
-    font-weight: bold;
-    color: #000;
-    text-decoration: none;
-    padding: 15px;
-  }
-
-  .navbar a {
-    margin: 0;
-    padding-top: 20px;
-    transform: translateY(10px);
-  }
-
-  .text {
-    transform: translateY(10px);
-  }
-
-  .frame {
-    position: absolute;
-    width: 656px;
-    height: 430px;
-    right: 70px;
-    top: 105px;
-    background: rgb(244 233 233 / 40%);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    border: 5px solid rgba(255,255,255,0.2);
-  }
-
-  .app-dev-text {
-    position: absolute;
-    font-family: SF Pro Display;
-    font-size: 20px;
-    left: 80px;
-    top: 5px;
-    background: linear-gradient(45deg, #571CFF, #12FFAA);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-  }
-
-  .web-dev-text {
-    position: absolute;
-    font-family: SF Pro Display;
-    font-size: 20px;
-    right: 86px;
-    top: 5px;
-    background: linear-gradient(45deg, #DB00FF, #17D5FF);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-  }
-
-
-  .app-dev {
-    position: absolute;
-    top: 61px;
-    right: 336px;
-    width: 305px;
-    height: 345px;
-  }
-
-  .web-dev {
-    position: absolute;
-    top: 61px;
-    right: 10px;
-    width: 301px;
-    height: 345px;
-  }
+.dark-mode {
+  transition: 0.5s;
 }
 
-@media only screen and (min-width: 1200px) {
-
-  .box {
-    position: absolute;
-    background: #f6f0f0;
-    opacity: 0.5;
-    width: 500px;
-    height: 44px;
-    border-radius: 3px;
-    top: 26px;
-    right: 469px;
-  }
-
-  .blur {
-    position: absolute;
-    width: 500px;
-    height: 44px;
-    border-radius: 3px;
-    top: 26px;
-    right: 400px;
-    background: rgba(255,255,255,0.4);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    border: 1px solid rgba(255,255,255,0.2);
-    z-index: -1;
-  }
-
-  .Home, .Services, 
-  .Resources, .Article, 
-  .Apps {
-    font-family: SF Pro Display;
-    font-weight: bold;
-    color: #000;
-    text-decoration: none;
-    padding: 15px;
-  }
-
-  .navbar a {
-    margin: 0;
-    padding-top: 20px;
-    transform: translateY(10px);
-  }
-
-  .text {
-    transform: translateY(10px);
-  }
-
-  .frame {
-    position: absolute;
-    width: 656px;
-    height: 430px;
-    right: 385px;
-    top: 105px;
-    background: rgb(244 233 233 / 40%);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    border: 5px solid rgba(255,255,255,0.2);
-  }
-
-  .app-dev-text {
-    position: absolute;
-    font-family: SF Pro Display;
-    font-size: 20px;
-    left: 80px;
-    top: 5px;
-    background: linear-gradient(45deg, #571CFF, #12FFAA);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-  }
-
-  .web-dev-text {
-    position: absolute;
-    font-family: SF Pro Display;
-    font-size: 20px;
-    right: 86px;
-    top: 5px;
-    background: linear-gradient(45deg, #DB00FF, #17D5FF);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-  }
-
-
-  .app-dev {
-    position: absolute;
-    top: 61px;
-    right: 336px;
-    width: 305px;
-    height: 345px;
-  }
-
-  .web-dev {
-    position: absolute;
-    top: 61px;
-    right: 10px;
-    width: 301px;
-    height: 345px;
-  }
+.dark-mode body {
+  background: #323232;
 }
 
-@media only screen and (max-width:  1280px) {
-   .box {
-    position: absolute;
-    background: #f6f0f0;
-    opacity: 0.5;
-    width: 500px;
-    height: 44px;
-    border-radius: 3px;
-    top: 26px;
-    right: 380px;
-  }
-
-  .blur {
-    position: absolute;
-    width: 500px;
-    height: 44px;
-    border-radius: 3px;
-    top: 26px;
-    right: 400px;
-    background: rgba(255,255,255,0.4);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    border: 1px solid rgba(255,255,255,0.2);
-    z-index: -1;
-  }
-
-  .Home, .Services, 
-  .Resources, .Article, 
-  .Apps {
-    font-family: SF Pro Display;
-    font-weight: bold;
-    color: #000;
-    text-decoration: none;
-    padding: 15px;
-  }
-
-  .navbar a {
-    margin: 0;
-    padding-top: 20px;
-    transform: translateY(10px);
-  }
-
-  .text {
-    transform: translateY(10px);
-  }
-
-  .frame {
-    position: absolute;
-    width: 656px;
-    height: 430px;
-    right: 315px;
-    top: 105px;
-    background: rgb(244 233 233 / 40%);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    border: 5px solid rgba(255,255,255,0.2);
-  }
-
-  .app-dev-text {
-    position: absolute;
-    font-family: SF Pro Display;
-    font-size: 20px;
-    left: 80px;
-    top: 5px;
-    background: linear-gradient(45deg, #571CFF, #12FFAA);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-  }
-
-  .web-dev-text {
-    position: absolute;
-    font-family: SF Pro Display;
-    font-size: 20px;
-    right: 86px;
-    top: 5px;
-    background: linear-gradient(45deg, #DB00FF, #17D5FF);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-  }
-
-
-  .app-dev {
-    position: absolute;
-    top: 61px;
-    right: 336px;
-    width: 305px;
-    height: 345px;
-  }
-
-  .web-dev {
-    position: absolute;
-    top: 61px;
-    right: 10px;
-    width: 301px;
-    height: 345px;
-  }
+.dark-mode .tagline-text {
+  color: #fff;
+  font-weight: 100;
+  opacity: 1;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-
-  .box {
-    position: absolute;
-    background: #f6f0f0;
-    opacity: 0.5;
-    width: 500px;
-    height: 44px;
-    border-radius: 3px;
-    top: 26px;
-    right: -120px;
-  }
-
-  .blur {
-    position: absolute;
-    width: 500px;
-    height: 44px;
-    border-radius: 3px;
-    top: 26px;
-    right: 400px;
-    background: rgba(255,255,255,0.4);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    border: 1px solid rgba(255,255,255,0.2);
-    z-index: -1;
-  }
-
-  .Home, .Services, 
-  .Resources, .Article, 
-  .Apps {
-    font-family: SF Pro Display;
-    font-weight: bold;
-    color: #000;
-    text-decoration: none;
-    padding: 15px;
-  }
-
-  .navbar a {
-    margin: 0;
-    padding-top: 20px;
-    transform: translateY(10px);
-  }
-
-  .text {
-    transform: translateY(10px);
-  }
-
-  .frame {
-    position: absolute;
-    width: 656px;
-    height: 430px;
-    right: -197px;
-    top: 105px;
-    background: rgb(244 233 233 / 40%);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    border: 5px solid rgba(255,255,255,0.2);
-  }
-
-  .app-dev-text {
-    position: absolute;
-    font-family: SF Pro Display;
-    font-size: 20px;
-    left: 80px;
-    top: 5px;
-    background: linear-gradient(45deg, #571CFF, #12FFAA);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-  }
-
-  .web-dev-text {
-    position: absolute;
-    font-family: SF Pro Display;
-    font-size: 20px;
-    right: 86px;
-    top: 5px;
-    background: linear-gradient(45deg, #DB00FF, #17D5FF);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-  }
-
-
-  .app-dev {
-    position: absolute;
-    top: 61px;
-    right: 336px;
-    width: 305px;
-    height: 345px;
-  }
-
-  .web-dev {
-    position: absolute;
-    top: 61px;
-    right: 10px;
-    width: 301px;
-    height: 345px;
-  }
+.dark-mode .box {
+  background: #474747;
 }
 
-@media only screen and (max-width: 767px) {
+.dark-mode .blur {
+  background: #323232;
+  border: #323232;
+}
 
-  .box {
-    position: absolute;
-    background: #f6f0f0;
-    opacity: 0.5;
-    width: 500px;
-    height: 44px;
-    border-radius: 3px;
-    top: 94px;
-    right: -547px;
-    transform: scale(1.8);
-  }
+.dark-mode .frame{
+  background: #323232;
+}
 
-  .blur {
-    position: absolute;
-    width: 500px;
-    height: 44px;
-    border-radius: 3px;
-    top: 26px;
-    right: 400px;
-    background: rgba(255,255,255,0.4);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    border: 1px solid rgba(255,255,255,0.2);
-    z-index: -1;
-  }
-
-  .Home, .Services, 
-  .Resources, .Article, 
-  .Apps {
-    font-family: SF Pro Display;
-    font-weight: bold;
-    color: #000;
-    text-decoration: none;
-    padding: 15px;
-  }
-
-  .navbar a {
-    margin: 0;
-    padding-top: 20px;
-    transform: translateY(10px);
-  }
-
-  .text {
-    transform: translateY(10px);
-  }
-
-  .frame {
-    position: absolute;
-    width: 580px;
-    height: 792px;
-    right: -603px;
-    top: 390px;
-    transform: scale(1.5);
-    background: rgb(244 233 233 / 40%);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    border: 5px solid rgba(255,255,255,0.2);
-  }
-
-  .app-dev-text {
-    position: absolute;
-    font-family: SF Pro Display;
-    font-size: 20px;
-    left: 218px;
-    top: 5px;
-    background: linear-gradient(45deg, #571CFF, #12FFAA);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-  }
-
-  .web-dev-text {
-    position: absolute;
-    font-family: SF Pro Display;
-    font-size: 20px;
-    right: 178px;
-    top: 397px;
-    background: linear-gradient(45deg, #DB00FF, #17D5FF);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-  }
-
-
-  .app-dev {
-    position: absolute;
-    top: 61px;
-    right: 115px;
-    width: 305px;
-    height: 345px;
-  }
-
-  .web-dev {
-    position: absolute;
-    top: 442px;
-    right: 115px;
-    width: 301px;
-    height: 345px;
-  }
+.dark-mode a {
+  color: #fff;
 }
