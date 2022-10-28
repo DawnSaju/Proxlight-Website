@@ -1,6 +1,6 @@
 @font-face {
   font-family: "SF Pro Display";
-  src: url('SF-Pro-Text-Semibold.otf');
+  src: url('Fonts/SF-Pro-Text-Semibold.otf');
 }
 
 * {
@@ -17,6 +17,7 @@ body {
 }
 
 .main-preloader {
+  margin: 0 auto;
   position: fixed;
   z-index: 9999;
   background: linear-gradient(#fc2561,#d823e7);
@@ -25,10 +26,12 @@ body {
 }
 
 .preloader-logo {
-  position: absolute;
-  left: 411px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transform: scale(0.4);
-  top: 50px;
+  height: 100vh;
   animation: anim 2.5s ease-in-out;
   }
 
@@ -47,13 +50,15 @@ body {
 }
 
 .hero-text {
-  position: absolute;
-  left: 445px;
-  top: 150px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   font-family: SF Pro Display;
   font-size: 100px;
-  background: linear-gradient(#fc2561,#d823e7);
+  height: 87vh;
+  background: linear-gradient(90deg,#fc2561,#d823e7 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
@@ -61,14 +66,16 @@ body {
 }
 
 .tagline-text {
-  position: absolute;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 50vh;
   font-family: SF Pro Display;
   font-weight: 100;
   font-size: 20px;
   color: #1E1E1E;
   opacity: 0.6;
-  left: 538px;
-  top: 488px;
+  transform: translateY(-20px);
 }
 
 #green-shape {
@@ -107,23 +114,28 @@ body {
 }
 
 .box {
-  position: absolute;
+  margin: 0 auto;
+  transform: translateY(20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #f6f0f0;
   opacity: 0.5;
   width: 500px;
   height: 44px;
   top: 26px;
-  right: 400px;
   border-radius: 10px;
 }
 
-.blur {
-  position: absolute;
+.blur {  
+  margin: -50px 0px 0px 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 500px;
   height: 44px;
   border-radius: 3px;
   top: 26px;
-  right: 400px;
   background: rgba(255,255,255,0.4);
   backdrop-filter: blur(10px);
   border-radius: 10px;
@@ -131,13 +143,13 @@ body {
   z-index: -1;
 }
 
+.text {
+  transform: translateY(0px);
+}
+
 .navbar a {
   margin: 0px;
   padding-top: 20px;
-  transform: translateY(10px);
-}
-
-.text {
   transform: translateY(10px);
 }
 
@@ -179,3 +191,117 @@ body {
 .dark-mode a {
   color: #fff;
 }
+
+
+
+@media screen and (max-width: 320px) {
+  .preloader-logo {
+    height: 180vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @keyframes anim {
+    0% {
+      transform: scale(0.4);
+    }
+
+    50% {
+      transform: scale(0.6);
+    }
+
+    100% {
+      transform: scale(0.4);
+    }
+  }
+
+  .main-preloader {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box {
+    transform: translate(340px,49px) scale(2.0);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-text {
+    margin: 0 auto;
+    transform: translateY(145%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240vh;
+    font-size: 200px;
+  }
+
+  .tagline-text {
+    margin: 0 auto;
+    transform: translate(0%,220vh);
+    font-size: 60px;
+    width: 237vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  #green-shape {
+    transform: translate(-162px,63em) scale(1.2)!important;
+    z-index: -1;
+    backdrop-filter: blur(10px);
+  }
+
+  #blue-shape {
+    transform: translate(-56px,64rem) scale(1.5)!important;
+  }
+
+  #pink-shape,
+  #orange-shape {
+    display: none;
+  }
+
+  #purple-shape {
+    transform: translate(-100px,3rem) scale(1.5)!important;
+    width: 500px;
+    z-index: -1;
+    backdrop-filter: blur(50px);
+  }
+}
+
+
+@media screen and (max-width: 390px) {
+  .preloader-logo {
+    transform: translateX(-135px) scale(0.4);
+  }
+
+  @keyframes anim {
+    0% {
+      transform: translateX(-135px) scale(0.4);
+    }
+
+    50% {
+      transform: translateX(-135px) scale(0.6);
+    }
+
+    100% {
+      transform: translateX(-135px) scale(0.4);
+    }
+  }
+
+  .hero-text {
+    transform: translateX(-135px) scale(0.8);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+  }
+}
+
