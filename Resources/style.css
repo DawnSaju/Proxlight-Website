@@ -131,7 +131,7 @@ body {
   backdrop-filter: blur(10px);
   border-radius: 10px;
   border: 5px solid rgba(255,255,255,0.2);
-  transform: translateY(50px) scale(0.9);
+  transform: translateY(100px) scale(1.1);
 }
 
 .wrapper{
@@ -227,7 +227,7 @@ body {
   border: 5px solid rgba(255,255,255,0.2);
 }
 
-.dark-mode .text h1 {
+.dark-mode .banner-text h1 {
   color: #fff;
 }
 
