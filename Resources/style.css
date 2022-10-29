@@ -19,6 +19,7 @@ body {
 }
 
 .main-preloader {
+  margin: 0 auto;
   position: fixed;
   z-index: 9999;
   background: linear-gradient(#fc2561,#d823e7);
@@ -27,12 +28,14 @@ body {
 }
 
 .preloader-logo {
-  position: absolute;
-  left: 411px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transform: scale(0.4);
-  top: 50px;
+  height: 100vh;
   animation: anim 2.5s ease-in-out;
-  }
+}
 
 @keyframes anim {
   0% {
@@ -64,7 +67,11 @@ body {
 }
 
 .box {
-  position: absolute;
+  margin: 0 auto;
+  transform: translateY(20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #f6f0f0;
   opacity: 0.5;
   width: 500px;
@@ -103,12 +110,19 @@ body {
   transform: translateY(10px);
 }
 
-.text {
+.text a {
+  transform: translateY(0px);
+}
+
+.banner-text {
   transform: translateY(10px);
 }
 
 .frame {
-  position: absolute;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 590px;
   height: 408px;
   right: 358px;
@@ -117,17 +131,29 @@ body {
   backdrop-filter: blur(10px);
   border-radius: 10px;
   border: 5px solid rgba(255,255,255,0.2);
+  transform: translateY(50px) scale(0.9);
+}
+
+.wrapper{
+  margin: 0 auto;
+  transform: translateY(-50px) scale(0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .tagline {
-  position: absolute;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: SF Pro Display;
   font-size: 20px;
   color: #1E1E1E;
   opacity: 0.7;
-  top: -5px;
-  right: 184px;
   font-weight: 500;
+  width: 500px;
+  transform: translateY(-192px);
 }
 
 .links {
@@ -142,31 +168,33 @@ body {
   top: -5px;
   right: -20px;
   transform: scale(0.8);
+  z-index: -1;
 }
 
 .logo img {
   position: absolute;
-  left: 219px;
-  top: 150px;
-  transform: scale(0.6);
+  transform: translate(215px,-22px) scale(0.6);
 }
 
 .button-box {
-  position: absolute;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(#FF006B,#FF70D7);
   width: 140px;
   height: 60px;
-  left: 310px;
-  top: 172px;
   border-radius: 8px;
+  transform: translateX(300px);
 }
 
 .button-box a {
-  position: absolute;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: SF Pro Display;
   color: #fff;
-  top: 20px;
-  right: 20px;
   font-weight: bold;
   text-decoration: none;
 }
@@ -205,4 +233,37 @@ body {
 
 .dark-mode a {
   color: #fff;
+}
+
+
+@media screen and (/*max-width: 320px*/ orientation: portrait) {
+  .preloader-logo {
+    height: 180vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @keyframes anim {
+    0% {
+      transform: scale(0.4);
+    }
+
+    50% {
+      transform: scale(0.6);
+    }
+
+    100% {
+      transform: scale(0.4);
+    }
+  }
+
+  .main-preloader {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 }

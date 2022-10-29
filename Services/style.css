@@ -18,6 +18,7 @@ body {
 }
 
 .main-preloader {
+  margin: 0 auto;
   position: fixed;
   z-index: 9999;
   background: linear-gradient(#fc2561,#d823e7);
@@ -26,10 +27,12 @@ body {
 }
 
 .preloader-logo {
-  position: absolute;
-  left: 411px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transform: scale(0.4);
-  top: 50px;
+  height: 100vh;
   animation: anim 2.5s ease-in-out;
   }
 
@@ -63,7 +66,11 @@ body {
 }
 
 .box {
-  position: absolute;
+  margin: 0 auto;
+  transform: translateY(20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #f6f0f0;
   opacity: 0.5;
   width: 500px;
@@ -71,19 +78,6 @@ body {
   border-radius: 10px;
   top: 26px;
   right: 400px;
-}
-
-.blur {
-  position: absolute;
-  width: 500px;
-  height: 44px;
-  top: 26px;
-  right: 400px;
-  background: rgba(255,255,255,0.4);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255,255,255,0.2);
-  border-radius: 10px;
-  z-index: -1;
 }
 
 .Home, .Services, 
@@ -103,15 +97,17 @@ body {
 }
 
 .text {
-  transform: translateY(10px);
+  transform: translateY(0px);
 }
 
 .frame {
-  position: absolute;
+  margin: 0 auto;
+  transform: translateY(20px) scale(0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 656px;
   height: 430px;
-  right: 312px;
-  top: 105px;
   background: rgb(244 233 233 / 40%);
   backdrop-filter: blur(10px);
   border-radius: 10px;
@@ -190,4 +186,61 @@ body {
 
 .dark-mode a {
   color: #fff;
+}
+
+
+@media screen and (/*max-width: 320px*/ orientation: portrait) {
+  .preloader-logo {
+    height: 180vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @keyframes anim {
+    0% {
+      transform: scale(0.4);
+    }
+
+    50% {
+      transform: scale(0.6);
+    }
+
+    100% {
+      transform: scale(0.4);
+    }
+  }
+
+  .main-preloader {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #Pink-Shape {
+    transform: translateX(-348.6667px)!important;
+  }
+
+  #Green-Shape {
+    transform: scale(1.0) translateX(-525.5333px) translateY(190px)!important;
+  }
+
+  .box {
+    transform: translate(370px,90px) scale(2.3);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }  
+
+  .frame {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(310px,580px) scale(1.8);
+  }
+
 }
