@@ -266,4 +266,21 @@ body {
     align-items: center;
   }
 
+  .frame {
+    transform: translate(100px,100px) scale(0.9);
+  }
+
+  .channel {
+    right: -60px;
+  }
+
+  .links {
+    transform: translateX(-50px);
+  }
+
+  #blue-shape {
+    position: absolute;
+    height: 500px;
+    transform: translate(230px, 325px) scale(0.4)!important;
+  }
 }
